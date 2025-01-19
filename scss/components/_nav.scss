@@ -1,0 +1,66 @@
+@use "../custom" as *;
+
+.nav_menu {
+  z-index: 99;
+  background-color: $nav;
+  .navbar-brand {
+    padding: 0.3rem 0.3rem 0.3rem 1rem;
+    gap: 0.3rem;
+    background-color: $hero-btn;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: $nav-font;
+  }
+
+  div {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin: 0 auto;
+    color: $body-font;
+    font-weight: 400;
+  }
+
+  button {
+    background-color: $nav;
+    border-style: none;
+    text-align: center;
+    padding: 0.3rem 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    gap: 2rem;
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
+  li a {
+    position: relative;
+    color: $nav_font;
+  }
+
+  li a:after {
+    content: " / ";
+    position: absolute;
+    bottom: 1.3rem;
+    right: -20%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0.2rem;
+  }
+
+  li:last-child a:after {
+    display: none;
+  }
+
+  li a:hover {
+    text-decoration: underline;
+  }
+}

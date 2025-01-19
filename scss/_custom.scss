@@ -1,0 +1,23 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+//* Custom Theme
+$custom-theme-colors: (
+  "nav": #bfd5e3,
+  "nav-font": #1b313f,
+  "hero-btn": #1b313f,
+  "hero-font": #1b313f,
+  "body-color": #0e1b23,
+  "body-font": #e4edf4,
+);
+
+$nav: #bfd5e3;
+$nav-font: #1b313f;
+$hero-btn: #1b313f;
+$hero-font: #1b313f;
+$body-color: #0e1b23;
+$body-font: #e4edf4;
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+//* Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
