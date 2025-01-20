@@ -10,10 +10,16 @@
     <header class="container-fluid site-header">
       <nav class="navbar navbar-expand-lg nav_menu">
         <div class="container">
-          <div class="navbar-brand rounded-pill">
-            <p>johnvhern.dc@gmail.com</p>
-            <button class="rounded-pill">Copy</button>
-            <button class="rounded-pill">CV</button>
+          <div class="left-nav d-flex">
+            <div class="navbar-brand rounded-pill">
+              <p>johnvhern.dc@gmail.com</p>
+              <button class="rounded-pill">Copy</button>
+            </div>
+            <div class="navbar-brand rounded-pill p-2">
+              <button class="rounded-pill bg-hero-btn text-body-font">
+                CV
+              </button>
+            </div>
           </div>
           <div class="justify-content-end">
             <ul class="navbar">
@@ -36,7 +42,40 @@
         <p>Aspiring Web / App Developer</p>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="container-fluid bg-body-color">
+        <div class="container text-center">
+          <h1 class="fw-bold display-2 text-body-font">About Me</h1>
+        </div>
+        <div class="container d-flex">
+          <div class="container-fluid">
+            <img
+              src="assets/css/images/ID.png"
+              class="img-fluid"
+              alt="image of the developer"
+            />
+          </div>
+          <div class="container-fluid d-flex gap-3">
+            <ul class="text-body-font list-unstyled">
+              <li>Name:</li>
+              <li>Birthdate:</li>
+              <li>Address:</li>
+              <li>Zip Code:</li>
+              <li>Email:</li>
+              <li>Phone:</li>
+            </ul>
+            <ul class="text-body-font list-unstyled">
+              <li>John Vhern Millor T. Dela Cruz</li>
+              <li>August 14, 2002</li>
+              <li>Poblacion Makato, Aklan</li>
+              <li>5611</li>
+              <li>johnvhern.dc@gmail.com</li>
+              <li>+639695083482</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
