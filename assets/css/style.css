@@ -12506,4 +12506,27 @@ textarea.form-control-lg {
   font-size: 4rem;
 }
 
+.about_me {
+  padding-bottom: 6rem;
+  background-color: #0e1b23;
+}
+.about_me h1 {
+  padding: 6rem 0 6rem 0;
+}
+.about_me div:nth-child(2) {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+}
+.about_me div img {
+  width: 500px;
+  border-radius: 50px;
+  outline: solid 3px #e4edf4;
+}
+.about_me li {
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+
 /*# sourceMappingURL=style.css.map */

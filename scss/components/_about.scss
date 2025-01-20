@@ -1,1 +1,27 @@
 @use "../custom" as *;
+
+.about_me {
+  padding-bottom: 6rem;
+  background-color: $body-color;
+  h1 {
+    padding: 6rem 0 6rem 0;
+  }
+
+  div:nth-child(2) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  div img {
+    width: 500px;
+    border-radius: 50px;
+    outline: solid 3px $body-font;
+  }
+
+  li {
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+}
