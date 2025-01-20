@@ -12430,14 +12430,6 @@ textarea.form-control-lg {
   color: #e4edf4;
   font-weight: 400;
 }
-.nav_menu button {
-  background-color: #bfd5e3;
-  border-style: none;
-  text-align: center;
-  padding: 0.3rem 1rem;
-  font-weight: 500;
-  font-size: 1rem;
-}
 .nav_menu ul {
   list-style: none;
   gap: 2rem;
@@ -12488,7 +12480,6 @@ textarea.form-control-lg {
   color: #1b313f;
   text-shadow: 0px 4px 5px rgba(27, 49, 63, 0.5);
   width: 100%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .site-header .site-header-mask p:first-child {
   top: 20%;
@@ -12527,6 +12518,19 @@ textarea.form-control-lg {
 .about_me li {
   font-size: 1.2rem;
   line-height: 3rem;
+}
+
+.nav-menu button {
+  background-color: #bfd5e3;
+  border-style: none;
+  text-align: center;
+  padding: 0.3rem 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

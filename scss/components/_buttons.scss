@@ -1,0 +1,12 @@
+@use "../custom" as *;
+
+.nav-menu {
+  button {
+    background-color: $nav;
+    border-style: none;
+    text-align: center;
+    padding: 0.3rem 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
