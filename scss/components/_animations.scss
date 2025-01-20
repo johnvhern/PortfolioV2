@@ -1,0 +1,18 @@
+@use "../custom" as *;
+
+.skill {
+  div:last-child div {
+    animation: progress 0.4s ease-in-out forwards;
+    animation-delay: 0.1;
+  }
+
+  @keyframes progress {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

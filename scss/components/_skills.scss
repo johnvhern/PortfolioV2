@@ -1,0 +1,52 @@
+@use "../custom" as *;
+.skills {
+  padding-bottom: 6rem;
+  background-color: #13242e;
+
+  div:nth-child(2) {
+    gap: 2.5rem;
+  }
+}
+
+.title {
+  padding: 6rem 0;
+  h1 {
+    color: $body-font;
+  }
+}
+
+.skill {
+  margin-bottom: 3.5rem;
+  div:first-child p {
+    color: $body-font;
+    font-size: 1.1rem;
+  }
+
+  div:last-child {
+    outline: solid 2px $nav;
+    background-color: transparent;
+  }
+
+  div:last-child div {
+    background-color: $body-font;
+  }
+
+  .html {
+    width: 50%;
+  }
+  .css {
+    width: 50%;
+  }
+  .csharp {
+    width: 30%;
+  }
+  .mssql {
+    width: 30%;
+  }
+  .js {
+    width: 20%;
+  }
+  .office {
+    width: 75%;
+  }
+}

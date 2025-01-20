@@ -12523,6 +12523,54 @@ textarea.form-control-lg {
   line-height: 3rem;
 }
 
+.skills {
+  padding-bottom: 6rem;
+  background-color: #13242e;
+}
+.skills div:nth-child(2) {
+  gap: 2.5rem;
+}
+
+.title {
+  padding: 6rem 0;
+}
+.title h1 {
+  color: #e4edf4;
+}
+
+.skill {
+  margin-bottom: 3.5rem;
+}
+.skill div:first-child p {
+  color: #e4edf4;
+  font-size: 1.1rem;
+}
+.skill div:last-child {
+  outline: solid 2px #bfd5e3;
+  background-color: transparent;
+}
+.skill div:last-child div {
+  background-color: #e4edf4;
+}
+.skill .html {
+  width: 50%;
+}
+.skill .css {
+  width: 50%;
+}
+.skill .csharp {
+  width: 30%;
+}
+.skill .mssql {
+  width: 30%;
+}
+.skill .js {
+  width: 20%;
+}
+.skill .office {
+  width: 75%;
+}
+
 .nav_menu button {
   background-color: #bfd5e3;
   border-style: none;
@@ -12535,6 +12583,20 @@ textarea.form-control-lg {
   background-color: #1b313f;
   color: #e4edf4;
   padding: 0.6rem 1.5rem;
+}
+
+.skill div:last-child div {
+  animation: progress 0.4s ease-in-out forwards;
+  animation-delay: 0.1;
+}
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 * {
