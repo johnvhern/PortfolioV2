@@ -12423,7 +12423,10 @@ textarea.form-control-lg {
   color: #1b313f;
 }
 .nav_menu div {
-  margin-top: 0.7rem;
+  padding-top: 0.7rem;
+}
+.nav_menu div:nth-last-child(2) {
+  align-items: center;
 }
 .nav_menu p {
   margin: 0 auto;
@@ -12520,13 +12523,18 @@ textarea.form-control-lg {
   line-height: 3rem;
 }
 
-.nav-menu button {
+.nav_menu button {
   background-color: #bfd5e3;
   border-style: none;
   text-align: center;
   padding: 0.3rem 1rem;
   font-weight: 500;
   font-size: 1rem;
+}
+.nav_menu .btn-cv {
+  background-color: #1b313f;
+  color: #e4edf4;
+  padding: 0.6rem 1.5rem;
 }
 
 * {
