@@ -1,7 +1,7 @@
 @use "../custom" as *;
 .skills {
   padding-bottom: 6rem;
-  background-color: #13242e;
+  background-color: $body-color;
 
   div:nth-child(2) {
     gap: 2.5rem;
