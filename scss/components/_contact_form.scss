@@ -2,8 +2,52 @@
 
 .contact-form {
   background-color: $body-color;
+  padding-bottom: 6rem;
 
-  form div {
+  h1 {
+    padding: 6rem 0;
+  }
+}
+
+.form {
+  div {
     color: $body-font;
+    width: 45%;
+    margin: 0 auto;
+  }
+  input,
+  textarea {
+    color: $body-font;
+    background-color: $body-color;
+  }
+
+  input:focus,
+  textarea:focus {
+    color: $body-font;
+    background-color: $body-color;
+  }
+
+  .form-control:-webkit-autofill,
+  .form-control:-webkit-autofill:hover,
+  .form-control:-webkit-autofill:focus,
+  .form-control:-webkit-autofill:active {
+    background-color: $body-color !important; /* Autofill background color */
+    -webkit-box-shadow: 0 0 0px 1000px var(--var-body-accent) inset !important; /* Force background color */
+    box-shadow: 0 0 0px 1000px var(--var-body-accent) inset !important;
+    -webkit-text-fill-color: $body-font !important; /* Autofill text color */
+    color: $body-font !important; /* Fallback for unsupported browsers */
+    transition: background-color 5000s ease-in-out,
+      -webkit-text-fill-color 5000s ease-in-out;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    border: solid 2px $nav;
+    background-color: $nav;
+  }
+
+  button:hover {
+    background-color: $body-color;
+    color: $nav;
   }
 }

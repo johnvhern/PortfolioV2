@@ -12573,9 +12573,46 @@ textarea.form-control-lg {
 
 .contact-form {
   background-color: #0e1b23;
+  padding-bottom: 6rem;
 }
-.contact-form form div {
+.contact-form h1 {
+  padding: 6rem 0;
+}
+
+.form div {
   color: #e4edf4;
+  width: 45%;
+  margin: 0 auto;
+}
+.form input,
+.form textarea {
+  color: #e4edf4;
+  background-color: #0e1b23;
+}
+.form input:focus,
+.form textarea:focus {
+  color: #e4edf4;
+  background-color: #0e1b23;
+}
+.form .form-control:-webkit-autofill,
+.form .form-control:-webkit-autofill:hover,
+.form .form-control:-webkit-autofill:focus,
+.form .form-control:-webkit-autofill:active {
+  background-color: #0e1b23 !important; /* Autofill background color */
+  -webkit-box-shadow: 0 0 0px 1000px var(--var-body-accent) inset !important; /* Force background color */
+  box-shadow: 0 0 0px 1000px var(--var-body-accent) inset !important;
+  -webkit-text-fill-color: #e4edf4 !important; /* Autofill text color */
+  color: #e4edf4 !important; /* Fallback for unsupported browsers */
+  transition: background-color 5000s ease-in-out, -webkit-text-fill-color 5000s ease-in-out;
+}
+.form button {
+  padding: 0.5rem 1rem;
+  border: solid 2px #bfd5e3;
+  background-color: #bfd5e3;
+}
+.form button:hover {
+  background-color: #0e1b23;
+  color: #bfd5e3;
 }
 
 .nav_menu button {
