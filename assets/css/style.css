@@ -12509,9 +12509,9 @@ textarea.form-control-lg {
 }
 .about_me div:nth-child(2) {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 2rem;
 }
 .about_me li {
   font-size: 1.2rem;
