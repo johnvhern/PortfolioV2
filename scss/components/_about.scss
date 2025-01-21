@@ -11,17 +11,50 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 2rem;
-  }
-
-  div img {
-    width: 500px;
-    border-radius: 50px;
-    outline: solid 3px $body-font;
+    gap: 6rem;
   }
 
   li {
     font-size: 1.2rem;
     line-height: 3rem;
+  }
+}
+
+.image-wrapper {
+  div:has(img) {
+    width: 80%;
+    border-radius: 50px;
+    outline: solid 3px $body-font;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  div:has(img):before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      0deg,
+      transparent,
+      transparent 30%,
+      rgba(191, 213, 227, 0.3)
+    );
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+
+  div:has(img):hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(191, 213, 227, 0.5);
+  }
+
+  div:has(img):hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
   }
 }
