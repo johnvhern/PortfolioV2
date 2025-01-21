@@ -1,0 +1,9 @@
+@use "../custom" as *;
+
+.contact-form {
+  background-color: $body-color;
+
+  form div {
+    color: $body-font;
+  }
+}

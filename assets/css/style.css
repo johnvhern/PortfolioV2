@@ -12571,6 +12571,13 @@ textarea.form-control-lg {
   width: 75%;
 }
 
+.contact-form {
+  background-color: #0e1b23;
+}
+.contact-form form div {
+  color: #e4edf4;
+}
+
 .nav_menu button {
   background-color: #bfd5e3;
   border-style: none;
