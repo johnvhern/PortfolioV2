@@ -12468,6 +12468,7 @@ textarea.form-control-lg {
   position: relative;
 }
 .site-header .site-header-mask {
+  text-align: center;
   position: absolute;
   inset: 0;
   -webkit-mask: url(../../assets/css/images/mask.png);
@@ -12525,26 +12526,6 @@ textarea.form-control-lg {
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease;
-}
-.image-wrapper div:has(img):before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(0deg, transparent, transparent 30%, rgba(191, 213, 227, 0.3));
-  transform: rotate(-45deg);
-  transition: all 0.5s ease;
-  opacity: 0;
-}
-.image-wrapper div:has(img):hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(191, 213, 227, 0.5);
-}
-.image-wrapper div:has(img):hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
 }
 
 .skills {
@@ -12665,6 +12646,27 @@ textarea.form-control-lg {
   100% {
     opacity: 1;
   }
+}
+
+.image-wrapper div:has(img):before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(0deg, transparent, transparent 30%, rgba(191, 213, 227, 0.3));
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.image-wrapper div:has(img):hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(191, 213, 227, 0.5);
+}
+.image-wrapper div:has(img):hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
 }
 
 * {

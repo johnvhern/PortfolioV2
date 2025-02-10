@@ -16,3 +16,35 @@
     }
   }
 }
+
+// * ABOUT ME IMAGE HOVER EFFECT
+
+.image-wrapper {
+  div:has(img):before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+      0deg,
+      transparent,
+      transparent 30%,
+      rgba(191, 213, 227, 0.3)
+    );
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+
+  div:has(img):hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(191, 213, 227, 0.5);
+  }
+
+  div:has(img):hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
+  }
+}
