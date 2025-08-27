@@ -204,20 +204,11 @@
   .absolute {
     position: absolute;
   }
-  .fixed {
-    position: fixed;
-  }
   .relative {
     position: relative;
   }
-  .sticky {
-    position: sticky;
-  }
   .inset-y-0 {
     inset-block: calc(var(--spacing) * 0);
-  }
-  .top-0 {
-    top: calc(var(--spacing) * 0);
   }
   .top-4 {
     top: calc(var(--spacing) * 4);
@@ -320,9 +311,6 @@
   }
   .h-\[75vh\] {
     height: 75vh;
-  }
-  .h-dvh {
-    height: 100dvh;
   }
   .h-full {
     height: 100%;
@@ -890,6 +878,16 @@
       margin: calc(var(--spacing) * 0);
     }
   }
+  .sm\:mt-5 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
@@ -898,6 +896,11 @@
   .sm\:grid-cols-1 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .sm\:flex-wrap {
+    @media (width >= 40rem) {
+      flex-wrap: wrap;
     }
   }
   .sm\:px-15 {
@@ -1029,6 +1032,13 @@
       }
     }
   }
+  .lg\:min-\[1366px\]\:px-40 {
+    @media (width >= 64rem) {
+      @media (width >= 1366px) {
+        padding-inline: calc(var(--spacing) * 40);
+      }
+    }
+  }
   .lg\:min-\[1366px\]\:px-69 {
     @media (width >= 64rem) {
       @media (width >= 1366px) {
@@ -1040,6 +1050,20 @@
     @media (width >= 64rem) {
       @media (width >= 1440px) {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+  }
+  .lg\:min-\[1440px\]\:px-69 {
+    @media (width >= 64rem) {
+      @media (width >= 1440px) {
+        padding-inline: calc(var(--spacing) * 69);
+      }
+    }
+  }
+  .lg\:min-\[1440px\]\:px-96 {
+    @media (width >= 64rem) {
+      @media (width >= 1440px) {
+        padding-inline: calc(var(--spacing) * 96);
       }
     }
   }
