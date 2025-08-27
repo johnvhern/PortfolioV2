@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tailwind/styles.css" />
+    <script src="js/script.js" type="module" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother requires ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <title>Portfolio - John Vhern</title>
+  </head>
+
+  <body>
+    <div class="smooth-wrapper">
+      <div class="smooth-content">
+        <header class="bg-[url('/assets/images/illustration.svg')] bg-cover bg-center">
+          <div class="overlay bg-primary/95">
+            <div class="nav-container py-10 flex justify-between items-center px-10 sm:px-15 md:px-20 lg:min-[1024px]:px-30 lg:min-[1366px]:px-69">
+              <div class="name">
+                <p class="text-text text-2xl font-extrabold font-jetbrains hover:text-accent transition-all duration-200">
+                  <a href="#">vhern</a>
+                </p>
+              </div>
+              <nav>
+                <ul class="text-text gap-5 text-sm font-jetbrains flex items-center">
+                  <li>
+                    <a href="https://www.linkedin.com/in/johnvhern" target="_blank" class="hover:text-accent transition-all duration-200">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-linkedin md:hidden"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                        />
+                      </svg>
+                      <span class="hidden md:visible md:flex">LinkedIn</span></a
+                    >
+                  </li>
+                  <span>/</span>
+                  <li>
+                    <a href="https://www.instagram.com/burnt_lomi" target="_blank" class="insta hover:text-accent transition-all duration-200">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-instagram md:hidden"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                        />
+                      </svg>
+                      <span class="hidden md:visible md:flex">Instagram</span></a
+                    >
+                  </li>
+                  <span>/</span>
+                  <li>
+                    <a href="https://github.com/johnvhern" target="_blank" class="github hover:text-accent transition-all duration-200">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="currentColor"
+                        class="bi bi-github md:hidden"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                        />
+                      </svg>
+                      <span class="hidden md:visible md:flex">GitHub</span></a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <section class="hero-section h-screen relative overflow-hidden">
+              <div
+                class="section-container h-[75vh] m-auto block content-center text-center text-text font-jetbrains px-10 sm:px-15 md:px-20 lg:min-[1024px]:px-30 lg:min-[1366px]:px-69"
+              >
+                <div class="parallax-item">
+                  <p class="text-text-labels text-sm sm:text-1xl font-semibold md:text-[18px]">Hi!, I am</p>
+                  <h1 class="text-text font-jetbrains font-extrabold text-5xl mt-7 md:text-6xl lg:text-8xl">John Vhern</h1>
+                  <div class="font-medium mt-7 items-center justify-center lg:block">
+                    <p class="text-text-labels text-xl md:text-2xl lg:text-3xl">
+                      Software Engineer <span>/</span>
+                      <span class="text-accent">System Implementation</span>
+                    </p>
+                    <p class="text-text-labels mt-7 text-sm sm:text-1xl max-w-3xl m-auto">
+                      Passionate about building clean, scalable applications and intuitive digital experiences. I specialize in turning ideas into
+                      functional, user-friendly solutions with a focus on modern development practices.
+                    </p>
+                  </div>
+                  <div class="mt-10 block justify-center sm:flex md:flex gap-5">
+                    <button
+                      type="button"
+                      id="btnCollab"
+                      class="cursor-pointer flex items-center m-auto bg-accent text-[15px] font-semibold text-accent-text p-4 gap-3 rounded-4xl sm:m-0 md:m-0 hover:scale-105 transition-all duration-200"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                        />
+                      </svg>
+
+                      Let's Collaborate
+                    </button>
+                    <button
+                      type="button"
+                      class="cursor-pointer flex gap-3 border-2 border-accent font-semibold text-[15px] p-4 px-5 rounded-4xl m-auto sm:m-0 mt-5 md:m-0 hover:hover:bg-accent hover:text-accent-text hover:transition-all duration-200 hover:scale-105"
+                      id="downloadResume"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 26 26" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                        />
+                      </svg>
+                      Download Resume
+                    </button>
+                  </div>
+                </div>
+                <div class="absolute left-1/2 bottom-[15%] animate-bounce">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                  </svg>
+                </div>
+              </div>
+            </section>
+          </div>
+        </header>
+        <main>
+          <section class="skills relative overflow-hidden">
+            <div class="section-container py-30 px-10 sm:px-15 md:px-20 lg:min-[1024px]:px-30 lg:min-[1366px]:px-69">
+              <div class="parallax-item">
+                <div class="title text-center">
+                  <h2 class="text-text font-semibold text-5xl font-jetbrains">Skills & <span class="text-accent">Expertise</span></h2>
+                  <p class="text-text-labels mt-7 font-jetbrains m-auto lg:max-w-[60%]">
+                    A comprehensive toolkit honed through years of building scalable applications and delivering exceptional user experiences.
+                  </p>
+                </div>
+                <div class="cards-container grid grid-cols-1 gap-8 mt-16 sm:grid-cols-1 md:grid-cols-2">
+                  <div
+                    class="group card bg-cards p-8 rounded-3xl border-1 border-accent/60 hover:scale-105 hover:shadow-[0px_4px_45px_7px_rgba(88,_166,_255,0.3)] transition-all duration-300"
+                  >
+                    <div class="title flex items-center gap-3">
+                      <div class="svg p-3 rounded-2xl group-hover:bg-accent/5 transition-all duration-300">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="size-6 stroke-accent"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-text font-jetbrains font-semibold text-[20px]">Frontend Development</p>
+                    </div>
+                    <div class="content mt-7">
+                      <ul class="text-text-labels text-[14px] font-jetbrains flex flex-wrap gap-1.5 lg:flex">
+                        <li class="px-4 py-1 rounded-4xl hover:bg-accent/70 hover:text-text transition-all duration-300">HTML</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-accent/70 hover:text-text transition-all duration-300">CSS</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-accent/70 hover:text-text transition-all duration-300">Tailwind CSS</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-accent/70 hover:text-text transition-all duration-300">Bootstrap</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-accent/70 hover:text-text transition-all duration-300">WinForms</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="group card bg-cards p-8 rounded-3xl border-1 border-amber-glow/60 hover:scale-105 hover:shadow-[0px_4px_45px_7px_rgba(255,_216,_102,0.3)] transition-all duration-300"
+                  >
+                    <div class="title flex items-center gap-3">
+                      <div class="svg p-3 rounded-2xl group-hover:bg-amber-glow/5 transition-all duration-300">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-7 stroke-amber-glow"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-text font-jetbrains font-semibold text-[20px]">Backend Development</p>
+                    </div>
+                    <div class="content mt-7">
+                      <ul class="text-text-labels text-[14px] font-jetbrains flex flex-wrap gap-1.5 lg:flex">
+                        <li class="px-4 py-1 rounded-4xl hover:bg-amber-glow/50 hover:text-text transition-all duration-300">Java</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-amber-glow/50 hover:text-text transition-all duration-300">C#</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-amber-glow/50 hover:text-text transition-all duration-300">MSSQL</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-amber-glow/50 hover:text-text transition-all duration-300">JavaScript</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-amber-glow/50 hover:text-text transition-all duration-300">SQLite</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="group card bg-cards p-8 rounded-3xl border-1 border-playful-red/60 hover:scale-105 hover:shadow-[0px_4px_45px_7px_rgba(255,_107,_107,0.3)] transition-all duration-300"
+                  >
+                    <div class="title flex items-center gap-3">
+                      <div class="svg p-3 rounded-2xl group-hover:bg-playful-red/5 transition-all duration-300">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6 stroke-playful-red"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008Z"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-text font-jetbrains font-semibold text-[20px]">Design & UX</p>
+                    </div>
+                    <div class="content mt-7">
+                      <ul class="text-text-labels text-[14px] font-jetbrains flex flex-wrap gap-1.5">
+                        <li class="px-4 py-1 rounded-4xl hover:bg-playful-red/50 hover:text-text transition-all duration-300">Adobe XD</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-playful-red/50 hover:text-text transition-all duration-300">Canva</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-playful-red/50 hover:text-text transition-all duration-300">Prototyping</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-playful-red/50 hover:text-text transition-all duration-300">Branding</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-playful-red/50 hover:text-text transition-all duration-300">Minimalism</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div
+                    class="group card bg-cards p-8 rounded-3xl border-1 border-accent/60 hover:scale-105 hover:shadow-[0px_4px_45px_7px_rgba(88,_166,_255,0.3)] transition-all duration-300"
+                  >
+                    <div class="title flex items-center gap-3">
+                      <div class="svg p-3 rounded-2xl group-hover:bg-accent/5 transition-all duration-300">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6 stroke-accent"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                          />
+                        </svg>
+                      </div>
+                      <p class="text-text font-jetbrains font-semibold text-[20px]">Mobile & Tools</p>
+                    </div>
+                    <div class="content mt-7">
+                      <ul class="text-text-labels text-[14px] font-jetbrains flex flex-wrap gap-1.5">
+                        <li class="px-4 py-1 rounded-4xl hover:bg-accent/70 hover:text-text transition-all duration-300">Git</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-accent/70 hover:text-text transition-all duration-300">GitHub</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-accent/70 hover:text-text transition-all duration-300">Android</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-accent/70 hover:text-text transition-all duration-300">Auth</li>
+                        <li class="px-4 py-1 rounded-4xl hover:bg-accent/70 hover:text-text transition-all duration-300">OkHttp</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="projects bg-bg-alternate relative overflow-hidden">
+            <div class="section-container py-30 px-10 sm:px-15 md:px-20 lg:min-[1024px]:px-30 lg:min-[1366px]:px-69">
+              <div class="parallax-item">
+                <div class="title text-center">
+                  <h2 class="text-text font-semibold text-5xl font-jetbrains">Featured <span class="text-accent">Projects</span></h2>
+                  <p class="text-text-labels mt-7 font-jetbrains m-auto lg:max-w-[60%]">
+                    A showcase of impactful solutions I've built, from concept to deployment, solving real-world challenges.
+                  </p>
+                </div>
+                <div
+                  class="projects-cards mt-16 grid grid-cols-1 md:grid-cols-1 lg:min-[1024px]:grid-cols-2 lg:min-[1440px]:grid-cols-3 items-stretch gap-8"
+                >
+                  <div
+                    class="card flex flex-col bg-cards rounded-4xl border-1 border-accent/60 overflow-hidden hover:scale-105 hover:shadow-[0px_4px_45px_7px_rgba(88,_166,_255,0.3)] transition-all duration-300"
+                  >
+                    <div class="img relative h-60">
+                      <img src="assets/images/rosal.png" alt="" class="object-cover w-full h-full" />
+                      <span
+                        class="absolute text-sm top-4 left-4 text-text font-jetbrains bg-primary/80 px-3 py-1 rounded-2xl hover:scale-105 transition-all duration-300"
+                        >Featured</span
+                      >
+                    </div>
+                    <div class="content p-5 flex flex-col grow">
+                      <div class="title-description grow">
+                        <p class="text-text font-jetbrains font-semibold text-xl mb-2">RosalES Profiling System</p>
+                        <p class="text-text-labels font-jetbrains text-sm mb-5 grow">
+                          The RosalES Profiling System helps educators monitor student development using standardized assessments, automating grouping
+                          and identifying delays.
+                        </p>
+                      </div>
+                      <div class="techstack">
+                        <div class="pills mb-6">
+                          <ul class="items-center flex flex-wrap gap-2 text-text font-jetbrains text-sm">
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">WinForms</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">C#</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">.NET Framework</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">MSSQL</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">IText7</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">BCrypt</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="group github mt-auto py-2 px-3 rounded-4xl bg-primary/50 w-max hover:scale-105 transition-all duration-300">
+                        <p>
+                          <a href="https://github.com/johnvhern/RosalESProfilingSystem" target="_blank" class="text-text font-jetbrains text-sm"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              shape-rendering="geometricPrecision"
+                              text-rendering="geometricPrecision"
+                              image-rendering="optimizeQuality"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              viewBox="0 0 512 512"
+                              class="size-6 inline"
+                            >
+                              <path
+                                fill="#fff"
+                                fill-rule="nonzero"
+                                d="M256.003 0C114.555 0 0 114.555 0 256.003c0 113.286 73.28 208.961 175.038 242.865 12.796 2.247 17.586-5.433 17.586-12.153 0-6.077-.309-26.225-.309-47.686-64.313 11.844-80.941-15.674-86.058-30.055-2.896-7.37-15.359-30.1-26.269-36.177-8.948-4.808-21.752-16.652-.31-16.961 20.168-.309 34.574 18.564 39.382 26.244 23.038 38.732 59.839 27.828 74.555 21.101 2.227-16.627 8.947-27.828 16.318-34.239-56.968-6.386-116.467-28.471-116.467-126.399 0-27.827 9.907-50.866 26.225-68.787-2.562-6.41-11.51-32.655 2.562-67.853 0 0 21.436-6.72 70.409 26.244 20.483-5.767 42.227-8.638 63.998-8.638 21.751 0 43.52 2.896 63.997 8.638 48.973-33.279 70.39-26.244 70.39-26.244 14.09 35.192 5.117 61.443 2.562 67.853 16.318 17.921 26.244 40.625 26.244 68.787 0 98.237-59.84 119.988-116.801 126.399 9.282 8.014 17.277 23.373 17.277 47.371 0 34.238-.309 61.751-.309 70.389 0 6.721 4.808 14.735 17.586 12.179C438.739 464.964 512 368.955 512 256.003 512 114.555 397.445 0 256.003 0z"
+                              />
+                            </svg>
+                            <span>View Project</span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-5 inline group-hover:animate-pulse transition-all duration-300"
+                            >
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card flex flex-col bg-cards rounded-4xl border-1 border-accent/60 overflow-hidden hover:scale-105 hover:shadow-[0px_4px_45px_7px_rgba(88,_166,_255,0.3)] transition-all duration-300"
+                  >
+                    <div class="img relative h-60">
+                      <img src="assets/images/gct.png" alt="" class="object-cover w-full h-full" />
+                      <span
+                        class="absolute text-sm top-4 left-4 text-text font-jetbrains bg-primary/80 px-3 py-1 rounded-2xl hover:scale-105 transition-all duration-300"
+                        >Featured</span
+                      >
+                    </div>
+                    <div class="content p-5 flex flex-col grow">
+                      <div class="title-description grow">
+                        <p class="text-text font-jetbrains font-semibold text-xl mb-2">GCT QR Attendance System</p>
+                        <p class="text-text-labels font-jetbrains text-sm mb-5 grow">
+                          The GCT QR Attendance System is an offline desktop tool for tracking attendance with QR codes and barcode scanners,
+                          featuring session management, ID generation, reporting, and secure MSSQL + bcrypt authentication.
+                        </p>
+                      </div>
+                      <div class="techstack">
+                        <div class="pills mb-6">
+                          <ul class="items-center flex flex-wrap gap-2 text-text font-jetbrains text-sm">
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">WinForms</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">C#</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">.NET Framework</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">MSSQL</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">IText7</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">BCrypt</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">QRCoder</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="group github mt-auto py-2 px-3 rounded-4xl bg-primary/50 w-max hover:scale-105 transition-all duration-300">
+                        <p>
+                          <a href="https://github.com/johnvhern/Attendo" target="_blank" class="text-text font-jetbrains text-sm"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              shape-rendering="geometricPrecision"
+                              text-rendering="geometricPrecision"
+                              image-rendering="optimizeQuality"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              viewBox="0 0 512 512"
+                              class="size-6 inline"
+                            >
+                              <path
+                                fill="#fff"
+                                fill-rule="nonzero"
+                                d="M256.003 0C114.555 0 0 114.555 0 256.003c0 113.286 73.28 208.961 175.038 242.865 12.796 2.247 17.586-5.433 17.586-12.153 0-6.077-.309-26.225-.309-47.686-64.313 11.844-80.941-15.674-86.058-30.055-2.896-7.37-15.359-30.1-26.269-36.177-8.948-4.808-21.752-16.652-.31-16.961 20.168-.309 34.574 18.564 39.382 26.244 23.038 38.732 59.839 27.828 74.555 21.101 2.227-16.627 8.947-27.828 16.318-34.239-56.968-6.386-116.467-28.471-116.467-126.399 0-27.827 9.907-50.866 26.225-68.787-2.562-6.41-11.51-32.655 2.562-67.853 0 0 21.436-6.72 70.409 26.244 20.483-5.767 42.227-8.638 63.998-8.638 21.751 0 43.52 2.896 63.997 8.638 48.973-33.279 70.39-26.244 70.39-26.244 14.09 35.192 5.117 61.443 2.562 67.853 16.318 17.921 26.244 40.625 26.244 68.787 0 98.237-59.84 119.988-116.801 126.399 9.282 8.014 17.277 23.373 17.277 47.371 0 34.238-.309 61.751-.309 70.389 0 6.721 4.808 14.735 17.586 12.179C438.739 464.964 512 368.955 512 256.003 512 114.555 397.445 0 256.003 0z"
+                              />
+                            </svg>
+                            <span>View Project</span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-5 inline group-hover:animate-pulse transition-all duration-300"
+                            >
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="card flex flex-col bg-cards rounded-4xl border-1 border-accent/60 overflow-hidden hover:scale-105 hover:shadow-[0px_4px_45px_7px_rgba(88,_166,_255,0.3)] transition-all duration-300"
+                  >
+                    <div class="img relative h-60">
+                      <img src="assets/images/ledremote.jpg" alt="" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="content p-5 flex flex-col grow">
+                      <div class="title-description grow">
+                        <p class="text-text font-jetbrains font-semibold text-xl mb-2">LED Strip Remote App</p>
+                        <p class="text-text-labels font-jetbrains text-sm mb-5 grow">
+                          An Android app that turns your phone into a remote control for SMD 5050 LED light strips using the built-in IR blaster.
+                        </p>
+                      </div>
+                      <div class="techstack">
+                        <div class="pills mb-6">
+                          <ul class="items-center flex flex-wrap gap-2 text-text font-jetbrains text-sm">
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">Java</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">Android SDK</li>
+                            <li class="px-4 py-1 rounded-4xl bg-accent/50 hover:scale-105 transition-all duration-300">Consumer IR API</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="group github mt-4 py-2 px-3 rounded-4xl bg-primary/50 w-max hover:scale-105 transition-all duration-300">
+                        <p>
+                          <a href="https://github.com/johnvhern/LEDRemote" target="_blank" class="text-text font-jetbrains text-sm"
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              shape-rendering="geometricPrecision"
+                              text-rendering="geometricPrecision"
+                              image-rendering="optimizeQuality"
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              viewBox="0 0 512 512"
+                              class="size-6 inline"
+                            >
+                              <path
+                                fill="#fff"
+                                fill-rule="nonzero"
+                                d="M256.003 0C114.555 0 0 114.555 0 256.003c0 113.286 73.28 208.961 175.038 242.865 12.796 2.247 17.586-5.433 17.586-12.153 0-6.077-.309-26.225-.309-47.686-64.313 11.844-80.941-15.674-86.058-30.055-2.896-7.37-15.359-30.1-26.269-36.177-8.948-4.808-21.752-16.652-.31-16.961 20.168-.309 34.574 18.564 39.382 26.244 23.038 38.732 59.839 27.828 74.555 21.101 2.227-16.627 8.947-27.828 16.318-34.239-56.968-6.386-116.467-28.471-116.467-126.399 0-27.827 9.907-50.866 26.225-68.787-2.562-6.41-11.51-32.655 2.562-67.853 0 0 21.436-6.72 70.409 26.244 20.483-5.767 42.227-8.638 63.998-8.638 21.751 0 43.52 2.896 63.997 8.638 48.973-33.279 70.39-26.244 70.39-26.244 14.09 35.192 5.117 61.443 2.562 67.853 16.318 17.921 26.244 40.625 26.244 68.787 0 98.237-59.84 119.988-116.801 126.399 9.282 8.014 17.277 23.373 17.277 47.371 0 34.238-.309 61.751-.309 70.389 0 6.721 4.808 14.735 17.586 12.179C438.739 464.964 512 368.955 512 256.003 512 114.555 397.445 0 256.003 0z"
+                              />
+                            </svg>
+                            <span>View Project</span>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-5 inline group-hover:animate-pulse transition-all duration-300"
+                            >
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            </svg>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="experience relative overflow-hidden">
+            <div class="section-container py-30 px-10 sm:px-15 md:px-20 lg:min-[1024px]:px-30 lg:min-[1366px]:px-30 lg:min-[1600px]:px-69">
+              <div class="parallax-item">
+                <div class="title text-center">
+                  <h2 class="text-text font-semibold text-5xl font-jetbrains">Work <span class="text-accent">Experience</span></h2>
+                  <p class="text-text-labels mt-7 font-jetbrains m-auto lg:max-w-[60%]">
+                    A journey through innovative companies where I've contributed to meaningful projects and grown as a developer.
+                  </p>
+                </div>
+                <div class="relative card-container mt-16">
+                  <div
+                    class="line absolute hidden left-2 inset-y-0 w-[1px] bg-text-labels/50 ml-[7.4px] lg:min-[1366px]:visible lg:min-[1366px]:flex -z-10"
+                  ></div>
+                  <div class="card relative">
+                    <div
+                      class="absolute hidden left-2 rounded-full bg-text p-1 border-4 border-accent/60 lg:min-[1366px]:visible lg:min-[1366px]:flex"
+                    ></div>
+                    <div
+                      class="content max-w-4xl border-1 border-accent/60 m-auto rounded-4xl p-6 bg-cards group hover:scale-105 hover:shadow-[0px_4px_45px_7px_rgba(88,_166,_255,0.3)] transition-all duration-300"
+                    >
+                      <div class="header">
+                        <div class="position-year flex flex-wrap justify-between">
+                          <p class="text-text text-xl font-semibold font-jetbrains group-hover:text-accent transition-all duration-300">
+                            Freelance Fullstack Software Developer
+                          </p>
+                          <p
+                            class="text-text text-sm font-jetbrains rounded-4xl py-1 px-3 bg-accent/10 hover:bg-accent/50 transition-all duration-300"
+                          >
+                            Feb - Present 2025
+                          </p>
+                        </div>
+                        <div>
+                          <div class="company flex flex-wrap items-center text-text-labels font-jetbrains gap-8 mt-4">
+                            <p class="flex items-center gap-2">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
+                                />
+                              </svg>
+                              <span class="text-[16px] font-semibold">Project Based</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                                />
+                              </svg>
+                              <span class="text-[16px]">Aklan</span>
+                            </p>
+                          </div>
+                          <div class="description mt-2 max-w-[95%]">
+                            <p class="text-text-labels font-light text-sm/6 font-jetbrains">
+                              Developed and deployed two school-focused desktop applications—a Learner Profiling & Assessment System and a Student
+                              Attendance System—using C#, WinForms, and MSSQL. These systems streamlined academic processes by enabling performance
+                              reporting, real-time attendance tracking, and data export features. Both solutions were designed with educators and
+                              administrators in mind, ensuring alignment with DepEd standards and improving the efficiency of school record
+                              management.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="achievements">
+                          <div class="mt-3">
+                            <p class="text-text font-jetbrains">Key Achievements:</p>
+                          </div>
+                          <div class="ml-4 mt-3">
+                            <ul class="list-disc marker:text-accent font-light text-text-labels text-sm/6 font-jetbrains">
+                              <li>
+                                Built end-to-end full-stack desktop applications that digitized student performance profiling and attendance tracking.
+                              </li>
+                              <li>
+                                Implemented barcode-based check-in, reporting, and export features (CSV, print-ready reports) that reduced manual work
+                                for teachers and admins.
+                              </li>
+                              <li>
+                                Delivered solutions aligned with DepEd reporting standards, ensuring compliance and usability in school operations.
+                              </li>
+                              <li>
+                                Enhanced usability for educators by adding admin modules for student profiles, class sections, and
+                                assessment/attendance logs.
+                              </li>
+                              <li>Maintained clean and collaborative development workflows through Git/GitHub version control.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="techstack">
+                          <div class="mt-3">
+                            <p class="text-text font-jetbrains">Technologies:</p>
+                          </div>
+                          <div>
+                            <ul class="flex flex-wrap gap-2 mt-3">
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                C#
+                              </li>
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                .NET Framework
+                              </li>
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                WinForms
+                              </li>
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                MSSQL
+                              </li>
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                BCrypt
+                              </li>
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                IText7
+                              </li>
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                QRCoder
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card relative mt-16">
+                    <div
+                      class="absolute hidden left-2 rounded-full bg-text p-1 border-4 border-accent/60 lg:min-[1366px]:visible lg:min-[1366px]:flex"
+                    ></div>
+                    <div
+                      class="content max-w-4xl border-1 border-accent/60 m-auto rounded-4xl p-6 bg-cards group hover:scale-105 hover:shadow-[0px_4px_45px_7px_rgba(88,_166,_255,0.3)] transition-all duration-300"
+                    >
+                      <div class="header">
+                        <div class="position-year flex flex-wrap justify-between">
+                          <p class="text-text text-xl font-semibold font-jetbrains group-hover:text-accent transition-all duration-300">
+                            IT Support Intern
+                          </p>
+                          <p
+                            class="text-text text-sm font-jetbrains rounded-4xl py-1 px-3 bg-accent/10 hover:bg-accent/50 transition-all duration-300"
+                          >
+                            Jan - April 2025
+                          </p>
+                        </div>
+                        <div>
+                          <div class="company flex flex-wrap items-center text-text-labels font-jetbrains gap-8 mt-4">
+                            <p class="flex items-center gap-2">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"
+                                />
+                              </svg>
+                              <span class="text-[16px] font-semibold">Asia Pacific Medical Center - Aklan</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="size-5"
+                              >
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                                />
+                              </svg>
+                              <span class="text-[16px]">Judge Martelino, Kalibo</span>
+                            </p>
+                          </div>
+                          <div class="description mt-2 max-w-[95%]">
+                            <p class="text-text-labels font-light text-sm/6 font-jetbrains">
+                              Served as an IT Support Intern at Asia Pacific Medical Center – Aklan, providing technical assistance for network and
+                              desktop systems across hospital departments. Gained hands-on experience in network configuration, hardware maintenance,
+                              and troubleshooting, contributing to the reliability of hospital IT operations.
+                            </p>
+                          </div>
+                        </div>
+                        <div class="achievements">
+                          <div class="mt-3">
+                            <p class="text-text font-jetbrains">Key Achievements:</p>
+                          </div>
+                          <div class="ml-4 mt-3">
+                            <ul class="list-disc marker:text-accent font-light text-text-labels text-sm/6 font-jetbrains">
+                              <li>Diagnosed and resolved network and endpoint issues, ensuring smooth daily operations for medical staff.</li>
+                              <li>Configured routers, cabling, and workstations, strengthening the hospital’s IT infrastructure.</li>
+                              <li>Awarded Top Performing Intern and Top Network Team Intern for outstanding contributions.</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="techstack">
+                          <div class="mt-3">
+                            <p class="text-text font-jetbrains">Technologies:</p>
+                          </div>
+                          <div>
+                            <ul class="flex flex-wrap gap-2 mt-3">
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                Ruijie
+                              </li>
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                PACS
+                              </li>
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                Cisco Meraki
+                              </li>
+                              <li
+                                class="py-1 px-3 rounded-4xl border-1 border-accent bg-transparent text-accent font-jetbrains text-sm hover:bg-accent/60 hover:text-text transition-all duration-300"
+                              >
+                                RIS
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="message relative overflow-hidden bg-bg-alternate h-min" id="message">
+            <div class="section-container py-30 px-10 sm:px-15 md:px-20 lg:min-[1024px]:px-30 lg:min-[1366px]:px-69">
+              <div class="parallax-item">
+                <div class="title text-center">
+                  <h2 class="text-text font-semibold text-5xl font-jetbrains">Let's <span class="text-accent">Connect</span></h2>
+                  <p class="text-text-labels mt-7 font-jetbrains m-auto lg:max-w-[60%]">
+                    Ready to bring your next project to life? Let's discuss how we can work together to create something amazing.
+                  </p>
+                </div>
+                <div class="mt-16 flex flex-wrap gap-8 justify-center items-center md:block lg:min-[1366px]:flex">
+                  <div>
+                    <div
+                      class="email rounded-2xl bg-cards border-1 border-accent/60 px-7 py-5 hover:shadow-[0px_4px_45px_7px_rgba(88,_166,_255,0.3)] transition-all duration-300"
+                    >
+                      <div class="flex items-center gap-4">
+                        <div class="p-2 bg-accent/5 rounded-2xl">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6 stroke-accent"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                            />
+                          </svg>
+                        </div>
+                        <p class="text-text font-jetbrains">Email</p>
+                      </div>
+                      <div class="mt-4">
+                        <address class="text-text-labels text-sm font-jetbrains not-italic">
+                          <p>johnvhern.dc@gmail.com</p>
+                          <p class="mt-2">I'll respond within 24 hours</p>
+                        </address>
+                      </div>
+                    </div>
+                    <div
+                      class="email rounded-2xl bg-cards border-1 border-amber-glow/60 px-7 py-5 mt-5 hover:shadow-[0px_4px_45px_7px_rgba(255,_216,_102,0.3)] transition-all duration-300"
+                    >
+                      <div class="flex items-center gap-4">
+                        <div class="p-2 bg-amber-glow/5 rounded-2xl">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6 stroke-amber-glow"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                            />
+                          </svg>
+                        </div>
+                        <p class="text-text font-jetbrains">Phone</p>
+                      </div>
+                      <div class="mt-4">
+                        <tel class="text-text-labels text-sm font-jetbrains not-italic">
+                          <p>09695083482</p>
+                          <p class="mt-2">Available Mon-Fri, 11AM-11PM PHT</p>
+                        </tel>
+                      </div>
+                    </div>
+                    <div
+                      class="email rounded-2xl bg-cards border-1 border-playful-red/60 px-7 py-5 mt-5 hover:shadow-[0px_4px_45px_7px_rgba(255,_107,_107,0.3)] transition-all duration-300"
+                    >
+                      <div class="flex items-center gap-4">
+                        <div class="p-2 bg-playful-red/5 rounded-2xl">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-6 stroke-playful-red"
+                          >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                            />
+                          </svg>
+                        </div>
+                        <p class="text-text font-jetbrains">Location</p>
+                      </div>
+                      <div class="mt-4">
+                        <address class="text-text-labels text-sm font-jetbrains not-italic">
+                          <p>Poblacion Makato, Aklan</p>
+                          <p class="mt-2">Open to remote opportunities</p>
+                        </address>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="message px-7 py-5 bg-cards border-1 border-accent/60 rounded-2xl w-full flex-1 md:mt-5">
+                    <div>
+                      <p class="text-text font-jetbrains text-lg font-semibold">Send me a message</p>
+                    </div>
+                    <div class="mt-4">
+                      <form action="" method="post" class="w-full" id="contact-form">
+                        <input type="hidden" name="to_name" value="John Vhern" />
+                        <div class="flex flex-wrap gap-4">
+                          <div class="flex-1">
+                            <div>
+                              <label for="name" class="text-text font-jetbrains text-sm">Name</label>
+                            </div>
+                            <input
+                              type="text"
+                              placeholder="Your Name"
+                              id="name"
+                              name="name"
+                              class="text-text font-jetbrains text-sm border-1 border-accent/60 outline-0 rounded-lg px-4 py-3 w-full mt-2"
+                              required
+                            />
+                          </div>
+                          <div class="flex-1">
+                            <div>
+                              <label for="email" class="text-text font-jetbrains text-sm">Email</label>
+                            </div>
+                            <input
+                              type="email"
+                              placeholder="Your Email"
+                              id="email"
+                              name="email"
+                              class="text-text font-jetbrains text-sm border-1 border-accent/60 outline-0 rounded-lg px-4 py-3 w-full mt-2"
+                            />
+                          </div>
+                        </div>
+                        <div class="w-full mt-6">
+                          <div>
+                            <label for="subject" class="text-text font-jetbrains text-sm">Subject</label>
+                          </div>
+                          <input
+                            type="text"
+                            placeholder="Project inquiry"
+                            id="subject"
+                            name="subject"
+                            class="text-text font-jetbrains text-sm border-1 border-accent/60 outline-0 rounded-lg px-4 py-3 w-full mt-2"
+                          />
+                        </div>
+                        <div class="w-full mt-6">
+                          <div>
+                            <label for="message" class="text-text font-jetbrains text-sm">Message</label>
+                          </div>
+                          <textarea
+                            name="message"
+                            id="message"
+                            placeholder="Tell me about your project..."
+                            rows="5"
+                            class="text-text font-jetbrains text-sm border-1 border-accent/60 outline-0 rounded-lg px-4 py-3 w-full mt-2 resize-none"
+                          ></textarea>
+                        </div>
+                        <button
+                          type="submit"
+                          class="flex items-center justify-center gap-2 px-4 py-2 bg-accent/50 rounded-lg w-full mt-4 hover:scale-105 transition-all duration-300"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-5 stroke-text rotate-330"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"
+                            />
+                          </svg>
+                          <span class="font-jetbrains text-text text-[16px]">Send Message</span>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <button type="button" class="absolute right-25 bottom-20 rounded-full bg-accent/50 p-4" onclick="backtoTop()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6 stroke-text">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+            </svg>
+          </button>
+        </main>
+        <footer class="bg-bg-alternate text-text-labels font-jetbrains text-center">
+          <p>&copy; John Vhern - All Rights Reserved</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
